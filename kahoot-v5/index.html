@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"/>
+<meta name="theme-color" content="#46154f"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Kahoot Pareja"/>
+<meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<title>Kahoot para dos · v5</title>
+<link rel="icon" type="image/svg+xml" href="../icon.svg?v=5.0.0"/>
+<link rel="apple-touch-icon" href="../icon.svg?v=5.0.0"/>
+<link rel="stylesheet" href="../styles.css?v=5.0.0-20260714"/>
+<script>
+(async()=>{
+  try{
+    if('serviceWorker' in navigator){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r=>r.unregister()));
+    }
+    if('caches' in window){
+      const keys=await caches.keys();
+      await Promise.all(keys.map(k=>caches.delete(k)));
+    }
+  }catch(e){console.warn('Limpieza de caché',e)}
+})();
+</script>
+</head>
+<body>
+<div class="app">
+<section id="setupScreen">
+<header class="brand">
+<div class="brand-icon">🎮</div>
+<h1>¿Quién <span class="grad">conoce mejor</span> a quién?</h1>
+<p class="subtitle">Kahoot nuevo: primero escribís las respuestas reales y después elegís entre cuatro opciones.</p>
+</header>
+<div class="glass panel">
+<p class="intro-copy">✅ <b>VERSIÓN NUEVA v5</b><br/>Respuesta secreta → cuatro tarjetas → CORRECTO o SHOT.</p>
+<div class="grid2">
+<div class="field"><label for="name1">Participante 1</label><input autocomplete="off" class="input" id="name1" maxlength="25" placeholder="Nombre" value="Eli"/></div>
+<div class="field"><label for="name2">Participante 2</label><input autocomplete="off" class="input" id="name2" maxlength="25" placeholder="Nombre"/></div>
+</div>
+<div class="field"><label>Número de rondas</label><div class="rounds"><button class="chip-btn" data-rounds="8">8</button><button class="chip-btn active" data-rounds="12">12</button><button class="chip-btn" data-rounds="18">18</button><button class="chip-btn" data-rounds="25">25</button></div></div>
+<div class="field"><label>Categorías</label><div class="cats" id="categories"></div></div>
+<button class="primary full" id="startBtn">Empezar el Kahoot 🎮</button>
+<button class="secondary full install" id="installBtn">Instalar como aplicación 📲</button>
+<div class="notice">✅ Acierto: +1 punto. ❌ Fallo: <b>SHOT 🥃</b>. También podéis usar agua o refresco.</div>
+</div>
+</section>
+<section class="hidden" id="gameScreen">
+<div class="topbar"><div class="mini-brand">🎮 Kahoot Pareja · v5</div><div class="top-actions"><button aria-label="Sonido" class="icon-btn" id="soundBtn">🔊</button><button aria-label="Salir" class="icon-btn" id="quitBtn">✕</button></div></div>
+<div class="scoreboard"><div class="score"><div class="score-name" id="scoreName1"></div><div class="score-stats"><span>⭐ <b id="score1">0</b></span><span>🥃 <b id="sips1">0</b></span></div></div><div class="score"><div class="score-name" id="scoreName2"></div><div class="score-stats"><span>⭐ <b id="score2">0</b></span><span>🥃 <b id="sips2">0</b></span></div></div></div>
+<div class="progress-meta"><span id="roundText"></span><span id="progressText"></span></div><div class="progress"><div id="progressBar"></div></div>
+<div class="glass question-card" id="questionCard"><span class="category" id="categoryLabel"></span><h2 class="question" id="questionText"></h2></div>
+<div id="phaseContainer"></div>
+</section>
+<section class="glass final hidden" id="finalScreen"><div class="trophy">🏆</div><h2>¡Partida terminada!</h2><p id="winnerText"></p><div class="final-grid"><div class="final-card" id="finalCard1"><strong id="finalName1"></strong><div class="big"><span id="finalScore1"></span> pts</div><span>🥃 <span id="finalSips1"></span> shots</span></div><div class="final-card" id="finalCard2"><strong id="finalName2"></strong><div class="big"><span id="finalScore2"></span> pts</div><span>🥃 <span id="finalSips2"></span> shots</span></div></div><button class="primary full" id="againBtn">Jugar otra vez 🔁</button></section>
+</div>
+<div class="modal hidden" id="installModal"><div class="modal-card"><h2>Instalar en el iPhone 📲</h2><p>En Safari, pulsa <b>Compartir</b> ⬆️ y después <b>Añadir a pantalla de inicio</b>.</p><button class="primary full" id="closeInstall">Entendido</button></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script defer src="../questions.js?v=5.0.0-20260714"></script>
+<script defer src="../app.js?v=5.0.0-20260714"></script>
+</body>
+</html>
