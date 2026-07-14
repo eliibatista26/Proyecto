@@ -1,2 +1,91 @@
-const BANK={"Gustos":["¿Cuál es tu comida favorita?","¿Qué bebida pedirías sin mirar la carta?","¿Cuál es tu desayuno ideal?","¿Qué canción podrías escuchar cien veces seguidas?","¿Cuál es tu película favorita?","¿Qué serie recomendarías siempre?","¿Prefieres dulce o salado?","¿Cuál es tu perfume favorito?","¿Qué estación del año disfrutas más?","¿Cuál sería tu plan de domingo perfecto?","¿Qué restaurante o tipo de restaurante elegirías para celebrar algo?"],"Personalidad":["¿Cuál es tu mayor manía?","¿Qué cosa te pone de mal humor enseguida?","¿Qué haces cuando estás nervioso/a?","¿Qué te calma cuando estás agobiado/a?","¿Qué cualidad valoras más en otra persona?","¿Qué defecto propio reconoces con más facilidad?","¿Eres más de planificar o de improvisar?","¿Qué situación te da más vergüenza?","¿Qué te hace reír a carcajadas?","¿Eres más de madrugar o de trasnochar?","¿Qué palabra o expresión repites mucho?"],"Recuerdos":["¿Cuál ha sido tu viaje favorito?","¿Cuál fue tu primera impresión de la otra persona?","¿Cuál ha sido tu cumpleaños favorito?","¿Qué recuerdo de infancia aprecias más?","¿Cuál es el momento más gracioso que habéis vivido juntos?","¿Qué regalo te ha hecho más ilusión?","¿Qué recuerdo del colegio no olvidas?","¿Cuál fue tu primer concierto o evento especial?","¿Qué verano recuerdas con más cariño?","¿Qué canción te transporta a otra época?","¿Cuál es tu recuerdo familiar favorito?"],"Futuro":["¿En qué país o ciudad te gustaría vivir?","¿Cuál es tu mayor meta profesional?","¿Cómo sería tu casa ideal?","¿Cómo imaginas tu boda ideal?","¿Qué viaje quieres hacer sí o sí?","¿Qué harías primero si ganaras la lotería?","¿Cuántos hijos te gustaría tener?","¿Qué proyecto te gustaría crear?","¿Dónde te imaginas dentro de diez años?","¿Qué habilidad quieres aprender en el futuro?","¿Qué trabajo probarías solo por curiosidad?"],"Pareja":["¿Qué fue lo primero que te atrajo de la otra persona?","¿Cuál sería tu cita ideal?","¿Qué gesto te hace sentir más querido/a?","¿Quién crees que dio realmente el primer paso?","¿Qué detalle de vuestra relación nunca olvidarás?","¿Qué manía de la otra persona te hace gracia?","¿Qué admiras más de la otra persona?","¿Qué plan de pareja repetirías mil veces?","¿Cómo te gusta que te sorprendan?","¿Qué canción te recuerda a vuestra relación?","¿Qué momento juntos consideras más especial?"],"Confianza y celos":["¿Qué situación podría darte un poquito de celos?","¿Cómo prefieres resolver una discusión?","¿Qué necesitas para confiar plenamente en alguien?","¿Qué consideras una pequeña falta de respeto?","¿Qué límite consideras innegociable en una relación?","¿Prefieres hablar en caliente o esperar a calmarte?","¿Qué gesto te devuelve la calma después de discutir?","¿Qué te hace sentir más seguro/a en una relación?","¿Prefieres una verdad incómoda o una mentira piadosa?","¿Qué detalle diario demuestra confianza para ti?","¿Qué conducta consideras importante evitar para cuidar la relación?"],"Convivencia":["¿Quién crees que cocina mejor?","¿Quién crees que es más ordenado/a?","¿Qué hábito doméstico te molesta más?","¿Qué tarea de casa odias más?","¿Qué música pondrías mientras limpias?","¿Qué mascota tendrías en casa?","¿Prefieres dormir con la ventana abierta o cerrada?","¿Ducha rápida o baño largo?","¿Qué lado de la cama elegirías?","¿Haces la cama nada más levantarte?","¿Cuál sería tu rincón favorito en una casa compartida?"],"Románticas":["¿Cuál consideras que es vuestra canción?","¿Dónde harías una escapada romántica?","¿Qué tipo de sorpresa romántica te gusta más?","¿Qué apodo cariñoso prefieres?","¿Cuándo te has sentido más querido/a?","¿Qué detalle pequeño te parece de película?","¿Prefieres flores, una carta o una playlist?","¿Qué película romántica elegirías?","¿Cómo sería tu aniversario ideal?","¿Qué frase romántica te derrite?","¿Qué lugar elegirías para una cena especial?"],"Picante suave":["¿Dónde te gusta más que te besen?","¿Qué tipo de beso prefieres?","¿Cómo sería tu cita nocturna ideal?","¿Qué prenda te parece más atractiva?","¿Qué famoso o famosa te parece muy guapo/a?","¿Qué gesto pequeño consideras sexy?","¿Qué canción te parece sensual?","¿Prefieres una mirada intensa o una risa cómplice?","¿Qué perfume u olor te parece irresistible?","¿Prefieres una cena con velas o cócteles en una azotea?","¿Qué acento te resulta más atractivo?"],"Anécdotas":["¿Cuál ha sido tu mayor metedura de pata?","¿Cuál es el momento más vergonzoso que recuerdas?","¿Cuál ha sido el peor regalo que has recibido?","¿Cuál ha sido tu cita más rara?","¿Cuál ha sido tu viaje más caótico?","¿Qué confusión graciosa no olvidas?","¿Qué caída o accidente tonto recuerdas?","¿Qué mensaje has enviado por error alguna vez?","¿Cuál ha sido tu mentirijilla más tonta?","¿Qué anécdota de fiesta recuerdas más?","¿Qué momento incómodo ahora te hace reír?"],"Random":["¿Qué superpoder elegirías?","¿Con qué animal te identificas más?","¿Cuál es tu emoji más usado?","¿Qué aplicación abres más veces al día?","¿Qué tres cosas llevarías a una isla desierta?","¿Qué comprarías primero si recibieras 1.000 € ahora?","¿Qué personaje de ficción te representa mejor?","¿Qué red social borrarías sin dudar?","¿Prefieres café, té o chocolate?","¿Prefieres playa o montaña?","¿Qué hobby extraño probarías?"]};
+const BANK={
+"Gustos":[
+{text:"¿Qué tipo de comida elegirías para una cena especial?",options:["Dominicana o caribeña","Italiana","Asiática","Hamburguesas o americana"]},
+{text:"¿Qué bebida pedirías primero?",options:["Refresco","Cóctel","Café","Agua o zumo"]},
+{text:"¿Cuál sería tu desayuno ideal?",options:["Tostadas y café","Huevos y algo salado","Fruta o yogur","Bollería o algo dulce"]},
+{text:"¿Qué plan de domingo prefieres?",options:["Quedarme en casa","Salir a comer","Excursión o paseo","Compras y cine"]},
+{text:"¿Qué género de película elegirías?",options:["Romántica","Comedia","Acción o suspense","Terror"]},
+{text:"¿Qué estación del año prefieres?",options:["Primavera","Verano","Otoño","Invierno"]}
+],
+"Personalidad":[
+{text:"Cuando te enfadas, ¿qué haces primero?",options:["Lo hablo de inmediato","Me quedo en silencio","Me alejo un rato","Lloro o me desahogo"]},
+{text:"¿Qué te calma más cuando estás agobiado/a?",options:["Que me abracen","Estar solo/a","Hablar y soltarlo todo","Dormir o distraerme"]},
+{text:"¿Cómo tomas una decisión importante?",options:["Analizo todo","Sigo mi intuición","Pido consejo","Decido rápido"]},
+{text:"¿Qué cualidad valoras más?",options:["Lealtad","Sinceridad","Cariño","Sentido del humor"]},
+{text:"¿Qué te describe mejor?",options:["Organizado/a","Espontáneo/a","Sensible","Terco/a"]},
+{text:"En una fiesta, ¿qué papel tienes?",options:["Alma de la fiesta","Con mi grupito","Voy cambiando de grupo","Prefiero no ir"]}
+],
+"Recuerdos":[
+{text:"¿Qué etapa recuerdas con más cariño?",options:["Infancia","Adolescencia","Universidad o estudios","Los últimos años"]},
+{text:"¿Qué recuerdo de pareja guardarías para siempre?",options:["La primera cita","Un viaje juntos","Una celebración","Un momento cotidiano"]},
+{text:"¿Qué tipo de regalo recuerdas más?",options:["Algo caro","Algo hecho a mano","Una experiencia","Una sorpresa"]},
+{text:"¿Qué plan os ha dejado mejores recuerdos?",options:["Viajar","Salir de fiesta","Quedaros en casa","Comer fuera"]},
+{text:"¿Qué época te produce más nostalgia?",options:["Cumpleaños","Navidad","Vacaciones","El inicio de la relación"]},
+{text:"¿Qué foto antigua mirarías primero?",options:["Una de pequeño/a","Una con amigos","Una de pareja","Una familiar"]}
+],
+"Futuro":[
+{text:"¿En qué lugar te gustaría vivir una temporada?",options:["España","República Dominicana","Estados Unidos","Otro país europeo"]},
+{text:"¿Qué país visitarías primero si pudieras salir mañana?",options:["Japón","Estados Unidos","Italia","República Dominicana"]},
+{text:"¿Cómo sería tu casa ideal?",options:["Apartamento moderno","Casa con jardín","Casa cerca de la playa","Ático en la ciudad"]},
+{text:"¿Qué harías primero si ganaras mucho dinero?",options:["Comprar una casa","Viajar","Invertir o emprender","Ayudar a mi familia"]},
+{text:"¿Qué meta te importa más ahora?",options:["Crecer profesionalmente","Formar una familia","Viajar y disfrutar","Estabilidad económica"]},
+{text:"¿Cómo imaginas tu boda ideal?",options:["Grande y elegante","Íntima y sencilla","En la playa","En una iglesia tradicional"]}
+],
+"Pareja":[
+{text:"¿Qué detalle de pareja valoras más?",options:["Mensajes cariñosos","Tiempo de calidad","Regalos y sorpresas","Ayuda diaria"]},
+{text:"¿Cuál sería tu cita ideal?",options:["Cena elegante","Cine y comida","Viaje o escapada","Plan casero"]},
+{text:"¿Qué te hace sentir más querido/a?",options:["Que me lo digan","Que me abracen","Que tengan detalles","Que me dediquen tiempo"]},
+{text:"¿Cómo prefieres celebrar un aniversario?",options:["Cena romántica","Viaje corto","Regalo especial","Plan sencillo en casa"]},
+{text:"¿Qué es más importante en una pareja?",options:["Confianza","Comunicación","Atracción","Proyectos comunes"]},
+{text:"¿Qué te atrae primero de alguien?",options:["La mirada","La sonrisa","La forma de hablar","La personalidad"]}
+],
+"Confianza y celos":[
+{text:"¿Qué situación te daría más celos?",options:["Mensajes ocultos","Confianza con un ex","Coqueteo en redes","Salir sin contar nada"]},
+{text:"Después de discutir, ¿qué necesitas?",options:["Hablarlo enseguida","Un rato de espacio","Un abrazo","Una disculpa clara"]},
+{text:"¿Qué rompe más la confianza?",options:["Una mentira","Ocultar conversaciones","No cumplir promesas","Hablar mal a tus espaldas"]},
+{text:"¿Cómo prefieres una verdad incómoda?",options:["Directa y clara","Explicada con cuidado","Descubrirla solo/a","Prefiero no saber"]},
+{text:"¿Qué límite es más importante?",options:["Respeto al discutir","Privacidad del móvil","Fidelidad","Tiempo personal"]},
+{text:"¿Qué te da más seguridad en la relación?",options:["Comunicación","Hechos coherentes","Cariño físico","Planes de futuro"]}
+],
+"Convivencia":[
+{text:"¿Qué tarea de casa odias más?",options:["Fregar platos","Limpiar el baño","Planchar","Ordenar la ropa"]},
+{text:"¿Cómo repartirías las tareas?",options:["Mitad y mitad","Según habilidades","Ir alternando","Según el tiempo libre"]},
+{text:"¿Qué hábito doméstico te molesta más?",options:["Cosas tiradas","No limpiar al cocinar","Ruido al dormir","Gastar demasiado"]},
+{text:"¿Qué música pondrías mientras limpias?",options:["Bachata o salsa","Reguetón","Pop","Prefiero silencio"]},
+{text:"¿Qué lado de la cama elegirías?",options:["Izquierdo","Derecho","Cerca de la puerta","Me da igual"]},
+{text:"¿Cómo sería vuestra noche normal ideal?",options:["Ver una serie","Cenar y hablar","Salir a pasear","Cada uno a lo suyo"]}
+],
+"Románticas":[
+{text:"¿Qué regalo romántico te haría más ilusión?",options:["Flores","Una carta","Una joya o detalle","Un viaje"]},
+{text:"¿Dónde harías una escapada romántica?",options:["París","Roma","Una isla del Caribe","Una casa rural"]},
+{text:"¿Qué ambiente te parece más romántico?",options:["Cena con velas","Atardecer en la playa","Hotel bonito","Noche de películas"]},
+{text:"¿Qué prefieres recibir sin esperarlo?",options:["Mensaje largo","Ramo de flores","Un regalo","Visita sorpresa"]},
+{text:"¿Qué canción pondrías para bailar en pareja?",options:["Bachata","Balada","Salsa","Pop romántico"]},
+{text:"¿Qué forma de cariño prefieres?",options:["Besos","Abrazos","Palabras bonitas","Detalles y cuidados"]}
+],
+"Picante suave":[
+{text:"¿Dónde prefieres que te besen?",options:["Labios","Cuello","Frente","Mejilla"]},
+{text:"¿Qué tipo de beso prefieres?",options:["Lento y romántico","Intenso","Corto y espontáneo","Muchos besitos"]},
+{text:"¿Qué te parece más atractivo?",options:["Mirada intensa","Sonrisa bonita","Voz atractiva","Buen perfume"]},
+{text:"¿Qué prenda te parece más sexy?",options:["Ropa elegante","Vestido","Ropa deportiva","Ropa cómoda"]},
+{text:"¿Qué plan nocturno elegirías?",options:["Cena y cócteles","Discoteca","Paseo nocturno","Noche privada en casa"]},
+{text:"¿Qué gesto te parece más sexy?",options:["Morderse el labio","Mirar fijamente","Hablar al oído","Sonreír con picardía"]}
+],
+"Anécdotas":[
+{text:"Cuando te pasa algo vergonzoso, ¿qué haces?",options:["Me río","Me pongo rojo/a","Finjo que no pasó","Me quiero ir"]},
+{text:"¿Qué error te ocurre más?",options:["Mensaje equivocado","Tropezarme","Olvidar una fecha","Hablar sin pensar"]},
+{text:"¿Qué cita rara sería más probable para ti?",options:["Silencios incómodos","Hablar del ex","Problemas con el lugar","Arrepentirme al llegar"]},
+{text:"En un viaje caótico, ¿qué te pasaría?",options:["Perder algo","Llegar tarde","Equivocarme de ruta","Olvidar una reserva"]},
+{text:"Cuando cuentas una anécdota, ¿cómo lo haces?",options:["La dramatizo","Voy al grano","Me río antes de acabar","Olvido detalles"]},
+{text:"¿Qué situación incómoda soportas peor?",options:["Sin tema de conversación","Nombre equivocado","Que se me caiga algo","Que todos me miren"]}
+],
+"Random":[
+{text:"¿Qué superpoder elegirías?",options:["Volar","Leer la mente","Ser invisible","Teletransportarme"]},
+{text:"¿Qué animal te representa mejor?",options:["Perro","Gato","León","Delfín"]},
+{text:"¿Qué aplicación utilizas más?",options:["Instagram","TikTok","WhatsApp","YouTube"]},
+{text:"¿Qué llevarías primero a una isla desierta?",options:["El móvil","Comida y agua","Una persona querida","Herramientas"]},
+{text:"¿Qué comprarías primero con 1.000 €?",options:["Ropa o tecnología","Un viaje","Lo ahorraría","Un regalo"]},
+{text:"¿Qué lugar elegirías para descansar?",options:["Playa","Montaña","Ciudad","Campo"]}
+]
+};
 const EMOJI={"Gustos":"🍰","Personalidad":"✨","Recuerdos":"📸","Futuro":"🔮","Pareja":"💞","Confianza y celos":"🫶","Convivencia":"🏡","Románticas":"🌹","Picante suave":"🔥","Anécdotas":"🙈","Random":"🎲"};
