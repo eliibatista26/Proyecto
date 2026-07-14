@@ -1,7 +1,7 @@
 {
   "name": "¿Quién conoce mejor a quién?",
   "short_name": "Nos Conocemos",
-  "description": "Juego de preguntas para dos personas con respuestas secretas, puntos y sorbitos.",
+  "description": "Juego tipo Kahoot para dos personas con cuatro opciones, puntos y SHOT por cada fallo.",
   "id": "./index.html",
   "start_url": "./index.html",
   "scope": "./",
