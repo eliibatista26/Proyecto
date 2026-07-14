@@ -1,0 +1,17 @@
+{
+  "name": "¿Quién conoce mejor a quién?",
+  "short_name": "Nos Conocemos",
+  "description": "Juego de preguntas para dos personas con respuestas secretas, puntos y sorbitos.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#210a31",
+  "theme_color": "#46154f",
+  "lang": "es",
+  "categories": ["games", "entertainment", "lifestyle"],
+  "icons": [
+    {"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
