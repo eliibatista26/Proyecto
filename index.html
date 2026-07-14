@@ -7,12 +7,15 @@
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
 <meta content="Nos Conocemos" name="apple-mobile-web-app-title"/>
-<meta content="Juego tipo Kahoot para dos personas: elige, adivina y descubre quién conoce mejor a quién." name="description"/>
-<link href="./manifest.webmanifest" rel="manifest"/>
-<link href="./icon.svg" rel="icon" type="image/svg+xml"/>
-<link href="./icon.svg" rel="apple-touch-icon"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<meta content="Juego tipo Kahoot para dos personas: primero escribís vuestras respuestas y después elegís entre cuatro opciones." name="description"/>
+<link href="./manifest.webmanifest?v=4.1.0" rel="manifest"/>
+<link href="./icon.svg?v=4.1.0" rel="icon" type="image/svg+xml"/>
+<link href="./icon.svg?v=4.1.0" rel="apple-touch-icon"/>
 <title>¿Quién conoce mejor a quién?</title>
-<link href="./styles.css" rel="stylesheet"/>
+<link href="./styles.css?v=4.1.0" rel="stylesheet"/>
 </head>
 <body>
 <div class="app">
@@ -20,23 +23,23 @@
 <header class="brand">
 <div class="brand-icon">🎮</div>
 <h1>¿Quién <span class="grad">conoce mejor</span> a quién?</h1>
-<p class="subtitle">Un Kahoot para dos: cuatro opciones, respuestas secretas y corrección automática.</p>
+<p class="subtitle">Primero escribís vuestras respuestas reales. Después la app crea cuatro opciones como un Kahoot.</p>
 </header>
 <div class="glass panel">
-<p class="intro-copy">Solo escribid vuestros nombres. Las 66 preguntas con cuatro opciones ya vienen preparadas ✨</p>
+<p class="intro-copy">✅ <b>Kahoot actualizado</b>: respuesta secreta → 4 opciones → CORRECTO o SHOT.</p>
 <div class="grid2">
 <div class="field"><label for="name1">Participante 1</label><input autocomplete="off" class="input" id="name1" maxlength="25" placeholder="Nombre" value="Eli"/></div>
 <div class="field"><label for="name2">Participante 2</label><input autocomplete="off" class="input" id="name2" maxlength="25" placeholder="Nombre"/></div>
 </div>
 <div class="field"><label>Número de rondas</label><div class="rounds"><button class="chip-btn" data-rounds="8">8</button><button class="chip-btn active" data-rounds="12">12</button><button class="chip-btn" data-rounds="18">18</button><button class="chip-btn" data-rounds="25">25</button></div></div>
 <div class="field"><label>Categorías</label><div class="cats" id="categories"></div></div>
-<button class="primary full" id="startBtn">Empezar la partida 🎮</button>
+<button class="primary full" id="startBtn">Empezar el Kahoot 🎮</button>
 <button class="secondary full install" id="installBtn">Instalar como aplicación 📲</button>
 <div class="notice">✅ Acierto: +1 punto. ❌ Fallo: <b>SHOT 🥃</b>. También podéis jugar con agua, refresco o bebidas sin alcohol. Si bebéis alcohol, hacedlo con responsabilidad.</div>
 </div>
 </section>
 <section class="hidden" id="gameScreen">
-<div class="topbar"><div class="mini-brand">🎮 Nos conocemos</div><div class="top-actions"><button aria-label="Sonido" class="icon-btn" id="soundBtn">🔊</button><button aria-label="Salir" class="icon-btn" id="quitBtn">✕</button></div></div>
+<div class="topbar"><div class="mini-brand">🎮 Nos conocemos · v4.1</div><div class="top-actions"><button aria-label="Sonido" class="icon-btn" id="soundBtn">🔊</button><button aria-label="Salir" class="icon-btn" id="quitBtn">✕</button></div></div>
 <div class="scoreboard"><div class="score"><div class="score-name" id="scoreName1"></div><div class="score-stats"><span>⭐ <b id="score1">0</b></span><span>🥃 <b id="sips1">0</b></span></div></div><div class="score"><div class="score-name" id="scoreName2"></div><div class="score-stats"><span>⭐ <b id="score2">0</b></span><span>🥃 <b id="sips2">0</b></span></div></div></div>
 <div class="progress-meta"><span id="roundText"></span><span id="progressText"></span></div><div class="progress"><div id="progressBar"></div></div>
 <div class="glass question-card" id="questionCard"><span class="category" id="categoryLabel"></span><h2 class="question" id="questionText"></h2></div>
@@ -46,7 +49,8 @@
 </div>
 <div class="modal hidden" id="installModal"><div class="modal-card"><h2>Instalar en el iPhone 📲</h2><p>En Safari, pulsa el botón <b>Compartir</b> ⬆️ y elige <b>“Añadir a pantalla de inicio”</b>. Después se abrirá como una aplicación independiente.</p><button class="primary full" id="closeInstall">Entendido</button></div></div>
 <div class="toast" id="toast" role="status"></div>
-<script defer src="./questions.js"></script>
-<script defer src="./app.js"></script>
+<script defer src="./questions.js?v=4.1.0"></script>
+<script defer src="./app.js?v=4.1.0"></script>
+<script defer src="./update.js?v=4.1.0"></script>
 </body>
 </html>
