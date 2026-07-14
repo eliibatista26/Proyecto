@@ -1,9 +1,9 @@
 {
   "name": "¿Quién conoce mejor a quién?",
   "short_name": "Nos Conocemos",
-  "description": "Juego tipo Kahoot para dos personas con cuatro opciones, puntos y SHOT por cada fallo.",
-  "id": "./index.html",
-  "start_url": "./index.html",
+  "description": "Juego tipo Kahoot para dos personas: primero escribís vuestras respuestas y después elegís entre cuatro opciones.",
+  "id": "./index.html?v=4.1.0",
+  "start_url": "./index.html?v=4.1.0",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
@@ -12,6 +12,6 @@
   "lang": "es",
   "categories": ["games", "entertainment", "lifestyle"],
   "icons": [
-    {"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+    {"src": "./icon.svg?v=4.1.0", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
   ]
 }
